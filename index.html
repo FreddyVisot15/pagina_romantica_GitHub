@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Una pequeña sorpresa hecha con mucho cariño.">
+  <title>Para ti ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Corazones decorativos -->
+  <div class="hearts" aria-hidden="true">
+    <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+    <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+  </div>
+
+  <!-- Pantalla inicial -->
+  <main id="intro" class="screen intro-screen">
+    <div class="intro-card">
+      <div class="mini-flower">✿</div>
+      <p class="eyebrow">Tengo algo que preguntarte...</p>
+      <h1>Hay algo que quiero decirte</h1>
+      <p class="intro-text">Pero primero tienes que presionar el botón.</p>
+      <button id="openButton" class="main-button">PRESIÓNALO ❤️</button>
+      <p class="tiny">prometo que vale la pena</p>
+    </div>
+  </main>
+
+  <!-- Contenido romántico -->
+  <main id="proposal" class="proposal hidden">
+
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <p class="eyebrow">Para la persona que hace mis días más bonitos</p>
+      <h2>¿Quieres ser<br><span>mi novia?</span> ❤️</h2>
+      <p class="hero-message">
+        Quiero seguir creando recuerdos contigo, conocer lugares nuevos,
+        reírnos de tonterías y tener muchas historias que algún día podamos contar.
+      </p>
+
+      <div class="answer-buttons">
+        <button id="yesButton" class="yes-button">Sí, quiero ❤️</button>
+        <button id="yesButton2" class="yes-button secondary">Obviamente 💙</button>
+      </div>
+    </section>
+
+    <section class="photo-section">
+      <div class="section-heading">
+        <span>✦</span>
+        <h3>Nosotros</h3>
+        <span>✦</span>
+      </div>
+
+      <div class="photo-frame">
+        <img src="sisi.png" alt="Fotografía de nosotros">
+      </div>
+
+      <p class="photo-caption">contigo, siempre es mejor</p>
+    </section>
+
+    <section class="memories">
+      <div class="memory-card">
+        <div class="memory-icon flower-art" aria-hidden="true">
+          <span class="flower flower-a">✿</span>
+          <span class="flower flower-b">✿</span>
+          <span class="flower flower-c">✿</span>
+          <span class="stem"></span>
+        </div>
+        <h3>Lysianthus azules</h3>
+        <p>Flores delicadas para recordarte que las cosas bonitas también pueden crecer con calma.</p>
+      </div>
+
+      <div class="memory-card">
+        <div class="sinsajo" aria-hidden="true">
+          <div class="bird">◜◝</div>
+          <div class="arrow">↝</div>
+          <div class="circle">★</div>
+        </div>
+        <h3>Siempre hay una chispa</h3>
+        <p>Un pequeño guiño a <em>Los Juegos del Hambre</em> y a esa historia que también forma parte de nosotros.</p>
+      </div>
+
+      <div class="memory-card">
+        <div class="tacos" aria-hidden="true">
+          🌮 🌮
+        </div>
+        <h3>Y unos buenos tacos</h3>
+        <p>Porque una historia de amor también necesita barbacoa, salsa y una buena plática.</p>
+      </div>
+    </section>
+
+    <section class="place-section">
+      <div class="section-heading">
+        <span>♡</span>
+        <h3>Un lugar especial</h3>
+        <span>♡</span>
+      </div>
+
+      <div class="place-card">
+        <div class="place-text">
+          <p class="eyebrow">📍 Jalisco</p>
+          <h3>El Grullo</h3>
+          <p>Un pin para un lugar que quiero guardar en nuestra historia.</p>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Mapa de El Grullo, Jalisco"
+            src="https://www.google.com/maps?q=El%20Grullo%2C%20Jalisco%2C%20Mexico&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <div class="map-pin" aria-hidden="true">📍</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="music-section">
+      <div class="music-note">♪</div>
+      <p class="eyebrow">Y esta canción...</p>
+      <h3>Tu Cariñito</h3>
+      <p class="artist">Edén Muñoz</p>
+
+      <div class="video-frame">
+        <iframe
+          id="musicFrame"
+          title="Tu Cariñito - Edén Muñoz"
+          src="https://www.youtube.com/embed/-lm9gjOt1Yc?rel=0"
+          allow="autoplay; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p class="music-caption">Dale play y quédate un ratito aquí conmigo. ❤️</p>
+    </section>
+
+    <section class="final-section">
+      <div class="final-card">
+        <div class="final-hearts">♡ ♥ ♡</div>
+        <h3>Entonces...</h3>
+        <p>¿Hacemos muchos más recuerdos juntos?</p>
+        <button class="final-button" id="finalButton">Sí ❤️</button>
+      </div>
+    </section>
+
+    <footer>
+      hecho con cariño ✦ para una persona muy especial
+    </footer>
+  </main>
+
+  <div id="successMessage" class="success-overlay hidden">
+    <div class="success-card">
+      <div class="success-heart">♥</div>
+      <h2>Sabía que dirías que sí ❤️</h2>
+      <p>Ahora sí... que empiece nuestra historia.</p>
+      <button id="closeSuccess">Seguir viendo ✨</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
